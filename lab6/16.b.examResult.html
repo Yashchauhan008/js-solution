@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+    <script>
+        function checkResult() {
+            var marks = [85, 76, 90, 67, 45]; 
+            var totalMarks = 0; // Variable to hold total marks
+
+            for (var i = 0; i < marks.length; i++) {
+                totalMarks += marks[i];
+            }
+
+                                var average = totalMarks / marks.length;
+            var result = average > 39 ? "Pass" : "Fail"; // Determine pass or fail
+            var grade; 
+
+            if (average > 90) {
+                grade = 'A';
+            } else if (average > 80) {
+                grade = 'B';
+            } else if (average > 70) {
+                grade = 'C';
+            } else if (average > 60) {
+                grade = 'D';
+            } else if (average > 40) {
+                grade = 'E';
+            } else {
+                grade = 'F';
+            }
+
+            document.write("<h2>Student Result</h2>");
+            document.write("<p>Total Marks: " + totalMarks + "</p>");
+            document.write("<p>Average Marks: " + average.toFixed(2) + "</p>");
+            document.write("<p>Result: " + result + "</p>");
+            document.write("<p>Grade: " + grade + "</p>");
+        }
+    </script>
+</head>
+<body onload="checkResult()">
+</body>
+</html>

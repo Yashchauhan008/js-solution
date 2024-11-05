@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional String Functions</title>
+    <script>
+        function additionalStringFunctions() {
+            let str = "Hello, JavaScript!";
+
+            let sliceResult = str.slice(7, 17); // "JavaScript"
+            let toLowerCaseResult = str.toLowerCase(); // "hello, javascript!"
+            let toUpperCaseResult = str.toUpperCase(); // "HELLO, JAVASCRIPT!"
+            let valueOfResult = str.valueOf(); // "Hello, JavaScript!"
+            let fromCharCodeResult = String.fromCharCode(72, 101, 108, 108, 111); // "Hello"
+
+            let results = `
+                slice(7, 17): ${sliceResult}
+                toLowerCase(): ${toLowerCaseResult}
+                toUpperCase(): ${toUpperCaseResult}
+                valueOf(): ${valueOfResult}
+                fromCharCode(72, 101, 108, 108, 111): ${fromCharCodeResult}
+            `;
+
+            document.getElementById("output").innerText = results;
+        }
+    </script>
+</head>
+<body>
+    <h2>Additional String Functions</h2>
+    <button onclick="additionalStringFunctions()">Show Additional String Functions</button>
+    <pre id="output"></pre>
+</body>
+</html>

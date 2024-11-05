@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbuilt String Functions</title>
+    <script>
+        function demoStringFunctions() {
+            let str = "Hello, JavaScript!";
+
+            let charAtResult = str.charAt(1); // "e"
+            let charCodeAtResult = str.charCodeAt(1); // ASCII value of "e"
+            let startsWithResult = str.startsWith("Hello"); // true
+            let endsWithResult = str.endsWith("!"); // true
+            let includesResult = str.includes("JavaScript"); // true
+            let indexOfResult = str.indexOf("Java"); // 7
+            let lastIndexOfResult = str.lastIndexOf("a"); // 11
+            let matchResult = str.match(/Java/); // ["Java"]
+            let repeatResult = str.repeat(2); // "Hello, JavaScript!Hello, JavaScript!"
+            let replaceResult = str.replace("JavaScript", "World"); // "Hello, World!"
+            let searchResult = str.search("JavaScript"); // 7
+            let splitResult = str.split(","); // ["Hello", " JavaScript!"]
+            let substrResult = str.substr(7, 10); // "JavaScript"
+            let substringResult = str.substring(7, 17); // "JavaScript"
+            let toStringResult = str.toString(); // "Hello, JavaScript!"
+            let trimResult = str.trim(); // "Hello, JavaScript!"
+
+            let results = `
+                charAt(1): ${charAtResult}
+                charCodeAt(1): ${charCodeAtResult}
+                startsWith("Hello"): ${startsWithResult}
+                endsWith("!"): ${endsWithResult}
+                includes("JavaScript"): ${includesResult}
+                indexOf("Java"): ${indexOfResult}
+                lastIndexOf("a"): ${lastIndexOfResult}
+                match("Java"): ${matchResult}
+                repeat(2): ${repeatResult}
+                replace("JavaScript", "World"): ${replaceResult}
+                search("JavaScript"): ${searchResult}
+                split(","): ${splitResult}
+                substr(7, 10): ${substrResult}
+                substring(7, 17): ${substringResult}
+                toString(): ${toStringResult}
+                trim(): ${trimResult}
+            `;
+            
+            document.getElementById("output").innerText = results;
+        }
+    </script>
+</head>
+<body>
+    <h2>Inbuilt String Functions</h2>
+    <button onclick="demoStringFunctions()">Show String Functions</button>
+    <pre id="output"></pre>
+</body>
+</html>

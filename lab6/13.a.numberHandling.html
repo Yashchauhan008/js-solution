@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Handling Functions</title>
+    <script>
+        function showNumberFunctions() {
+            let num = 45.6789;
+            document.write("<h2>Number Handling Functions</h2>");
+            document.write("<p>Number: " + num + "</p>");
+            document.write("<p>toFixed(2): " + num.toFixed(2) + "</p>");
+            document.write("<p>toPrecision(4): " + num.toPrecision(4) + "</p>");
+            document.write("<p>toExponential(2): " + num.toExponential(2) + "</p>");
+            document.write("<p>isNaN('Hello'): " + isNaN("Hello") + "</p>");
+            document.write("<p>parseInt('123abc'): " + parseInt("123abc") + "</p>");
+            document.write("<p>parseFloat('123.45abc'): " + parseFloat("123.45abc") + "</p>");
+            document.write("<p>Number.MAX_VALUE: " + Number.MAX_VALUE + "</p>");
+            document.write("<p>Number.MIN_VALUE: " + Number.MIN_VALUE + "</p>");
+        }
+    </script>
+</head>
+<body onload="showNumberFunctions()">
+</body>
+</html>
