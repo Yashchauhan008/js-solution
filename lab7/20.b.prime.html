@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Prime Number</title>
+    <script>
+        function checkPrime() {
+            var num = 29;
+            var isPrime = true;
+
+            if (num <= 1) {
+                isPrime = false;
+            } else {
+                for (var i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        isPrime = false; 
+                        break;
+                    }
+                }
+            }
+
+            document.write("<h2>Check Prime Number</h2>");
+            document.write("<p>The number " + num + " is " + (isPrime ? "Prime" : "Not Prime") + ".</p>");
+        }
+    </script>
+</head>
+<body onload="checkPrime()">
+</body>
+</html>

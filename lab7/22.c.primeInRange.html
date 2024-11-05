@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers Between Two Numbers</title>
+    <script>
+        function printPrimeNumbers() {
+            var start = 10; 
+            var end = 50;
+            document.write("<h2>Prime Numbers Between " + start + " and " + end + "</h2>");
+            document.write("<p>");
+
+            for (var num = start; num <= end; num++) {
+                var isPrime = true;
+
+                if (num <= 1) {
+                    isPrime = false; 
+                } else {
+                    for (var i = 2; i <= Math.sqrt(num); i++) {
+                        if (num % i === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                }
+
+                if (isPrime) {
+                    document.write(num + " ");
+                }
+            }
+
+            document.write("</p>");
+        }
+    </script>
+</head>
+<body onload="printPrimeNumbers()">
+</body>
+</html>
