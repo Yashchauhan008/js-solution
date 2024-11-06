@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Armstrong Number</title>
+    <script>
+        function checkArmstrong() {
+            var num = 153;
+            var originalNum = num;
+            var sum = 0;
+
+            while (num > 0) {
+                var digit = num % 10;
+                sum += digit * digit * digit; 
+                num = Math.floor(num / 10);
+            }
+
+            var isArmstrong = (sum === originalNum);
+
+            document.write("<h2>Check Armstrong Number</h2>");
+            document.write("<p>The number " + originalNum + " is " + (isArmstrong ? "an Armstrong" : "Not an Armstrong") + " number.</p>");
+        }
+    </script>
+</head>
+<body onload="checkArmstrong()">
+</body>
+</html>

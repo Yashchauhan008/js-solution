@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM of Two Numbers</title>
+    <script>
+        function findLCM() {
+            var a = 15;
+            var b = 20; 
+            var max = (a > b) ? a : b; 
+
+            while (true) {
+                if (max % a === 0 && max % b === 0) {
+                    document.write("<h2>LCM of Two Numbers</h2>");
+                    document.write("<p>LCM: " + max + "</p>");
+                    break;
+                }
+                max++;
+            }
+        }
+    </script>
+</head>
+<body onload="findLCM()">
+</body>
+</html>

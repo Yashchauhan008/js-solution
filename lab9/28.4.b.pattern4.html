@@ -1,0 +1,27 @@
+<!-- ------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid Pattern</title>
+    <script>
+        function pyramidPattern() {
+            document.write("<h2>Pyramid Pattern</h2>");
+            for (var i = 5; i >= 1; i--) {
+                // Add leading spaces to center the numbers
+                for (var j = 1; j <= 5 - i; j++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                // Print the number 'i' multiple times in each row
+                for (var k = 1; k <= (2 * i - 1); k++) {
+                    document.write(i + " ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body onload="pyramidPattern()">
+</body>
+</html>
+

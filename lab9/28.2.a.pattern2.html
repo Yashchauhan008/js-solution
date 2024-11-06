@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern 2</title>
+    <script>
+        function pattern2() {
+            document.write("<h2>Pattern 2</h2>");
+            for (var i = 1; i <= 5; i++) {
+                for (var j = 1; j <= 5 - i; j++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                for (var k = 1; k <= i; k++) {
+                    document.write(k);
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body onload="pattern2()">
+</body>
+</html>

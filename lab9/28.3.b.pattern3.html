@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern 3</title>
+    <style>
+        body {
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        function pattern3() {
+            document.write("<h2>Pattern 3</h2>");
+            for (var i = 5; i >= 1; i--) {
+                for (var j = 5; j > i; j--) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                for (var k = 1; k <= i; k++) {
+                    document.write("* &nbsp;");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body onload="pattern3()">
+</body>
+</html>

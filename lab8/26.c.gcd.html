@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCD of Two Numbers</title>
+    <script>
+        function findGCD() {
+            var a = 60;
+            var b = 48;
+
+            while (b != 0) {
+                var temp = b;
+                b = a % b;
+                a = temp;
+            }
+
+            document.write("<h2>GCD of Two Numbers</h2>");
+            document.write("<p>GCD: " + a + "</p>");
+        }
+    </script>
+</head>
+<body onload="findGCD()">
+</body>
+</html>

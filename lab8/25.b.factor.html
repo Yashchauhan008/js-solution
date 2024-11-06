@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factors of a Number</title>
+    <script>
+        function printFactors() {
+            var num = 36;
+            document.write("<h2>Factors of " + num + "</h2>");
+            document.write("<p>");
+
+            for (var i = 1; i <= num; i++) {
+                if (num % i === 0) {
+                    document.write(i + " ");
+                }
+            }
+
+            document.write("</p>");
+        }
+    </script>
+</head>
+<body onload="printFactors()">
+</body>
+</html>
