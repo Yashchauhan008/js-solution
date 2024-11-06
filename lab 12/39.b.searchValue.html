@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search in Array</title>
+    <script>
+        function search(array, value) {
+            var index = array.indexOf(value);
+            return index;
+        }
+
+        function searchValue() {
+            var numbers = [10, 20, 30, 40, 50];
+            var valueToSearch = 30;
+            var index = search(numbers, valueToSearch);
+
+            if (index !== -1) {
+                document.write("<h2>Value found at index: " + index + "</h2>");
+            } else {
+                document.write("<h2>Value not found!</h2>");
+            }
+        }
+    </script>
+</head>
+<body onload="searchValue()">
+</body>
+</html>

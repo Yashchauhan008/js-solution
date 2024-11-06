@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merge Arrays</title>
+    <script>
+        function mergeArrays() {
+            var array1 = [1, 2, 3];
+            var array2 = [4, 5, 6];
+            var array3 = [7, 8, 9];
+
+            var mergedArray = array1.concat(array2, array3);
+
+            document.write("<h2>Merged Array:</h2>");
+            document.write(mergedArray.join(", ") + "<br>");
+        }
+    </script>
+</head>
+<body onload="mergeArrays()">
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Defined Function Example</title>
+    <script>
+        function greetUser(name) {
+            return "Hello, " + name + "!";
+        }
+
+        function showMessage() {
+            var name = prompt("Enter your name:");
+            var message = greetUser(name);  // Calling the UDF
+            alert(message);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showMessage()">Click to Greet</button>
+</body>
+</html>
