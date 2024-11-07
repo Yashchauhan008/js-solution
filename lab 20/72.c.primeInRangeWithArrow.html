@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Numbers in Range with Arrow Function</title>
+    <script>
+        const isPrime = num => {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        };
+
+        const printPrimesInRange = (start, end) => {
+            let primes = [];
+            for (let i = start; i <= end; i++) {
+                if (isPrime(i)) primes.push(i);
+            }
+            return primes.join(', ');
+        };
+
+        function showPrimes() {
+            const start = 10;
+            const end = 50; 
+            document.getElementById("result").innerHTML = 
+                "Prime numbers between " + start + " and " + end + ": " + printPrimesInRange(start, end);
+        }
+    </script>
+</head>
+<body onload="showPrimes()">
+    <h2>Prime Numbers in Range Using Arrow Function</h2>
+    <p id="result"></p>
+</body>
+</html>

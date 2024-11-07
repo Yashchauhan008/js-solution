@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difference between let and var</title>
+    <script>
+        function demonstrateLetVar() {
+            if (true) {
+                var varVariable = "I am defined with var";
+                let letVariable = "I am defined with let";
+                document.getElementById("letResult").innerHTML = letVariable;
+            }
+            document.getElementById("varResult").innerHTML = varVariable;
+            try {
+                document.getElementById("letError").innerHTML = letVariable;
+            } catch (error) {
+                document.getElementById("letError").innerHTML = "letVariable is not accessible here.";
+            }
+        }
+    </script>
+</head>
+<body onload="demonstrateLetVar()">
+    <h2>let vs var in JavaScript</h2>
+    <p id="letResult">let Result: </p>
+    <p id="varResult">var Result: </p>
+    <p id="letError">let Error: </p>
+</body>
+</html>

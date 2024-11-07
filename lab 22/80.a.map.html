@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Map Function</title>
+    <script>
+        function demonstrateMap() {
+            const numbers = [1, 2, 3, 4, 5];
+            const doubledNumbers = numbers.map(num => num * 2);
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + numbers + "<br>" +
+                "Doubled Array: " + doubledNumbers;
+        }
+    </script>
+</head>
+<body onload="demonstrateMap()">
+    <h2>Array Map Function</h2>
+    <p id="result"></p>
+</body>
+</html>

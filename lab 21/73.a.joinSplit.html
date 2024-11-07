@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Join and Split</title>
+    <script>
+        function demonstrateJoinSplit() {
+            const words = ["Hello", "world", "from", "JavaScript"];
+            const joined = words.join(" ");
+            const splitArray = joined.split(" ");
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + words + "<br>" +
+                "Joined String: " + joined + "<br>" +
+                "Split Array: " + splitArray;
+        }
+    </script>
+</head>
+<body onload="demonstrateJoinSplit()">
+    <h2>Array Join and Split</h2>
+    <p id="result"></p>
+</body>
+</html>

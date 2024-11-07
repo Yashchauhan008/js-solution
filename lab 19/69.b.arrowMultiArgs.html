@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Arrow Functions</title>
+    <script>
+        function demonstrateMultipleArrowFunctions() {
+            const add = (a, b) => a + b;
+            const multiply = (a, b) => a * b;
+
+            document.getElementById("result").innerHTML = 
+                "Addition (5 + 3): " + add(5, 3) + "<br>" +
+                "Multiplication (5 * 3): " + multiply(5, 3);
+        }
+    </script>
+</head>
+<body onload="demonstrateMultipleArrowFunctions()">
+    <h2>Multiple Arrow Functions</h2>
+    <p id="result"></p>
+</body>
+</html>

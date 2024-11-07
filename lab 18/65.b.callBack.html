@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback Example</title>
+    <script>
+        function displayMessage(message) {
+            document.getElementById("callbackResult").innerHTML = message;
+        }
+
+        function processData(data, callback) {
+            let processedData = "Processed Data: " + data;
+            callback(processedData); // Executing the callback function
+        }
+
+        function initiateCallback() {
+            processData("Example Data", displayMessage);
+        }
+    </script>
+</head>
+<body onload="initiateCallback()">
+    <h2>Callback Function in JavaScript</h2>
+    <p id="callbackResult"></p>
+</body>
+</html>

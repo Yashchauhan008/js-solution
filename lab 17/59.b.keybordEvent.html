@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Event Recognition</title>
+    <script>
+        function showEvent(eventName) {
+            document.getElementById("eventDisplay").innerHTML = "Event fired: " + eventName;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeydown="showEvent('Key Down')" onkeyup="showEvent('Key Up')" 
+           onkeypress="showEvent('Key Press')" placeholder="Type here">
+    <p id="eventDisplay">Type in the box to see which event is triggered.</p>
+</body>
+</html>

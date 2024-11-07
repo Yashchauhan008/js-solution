@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Argument Arrow Function</title>
+    <script>
+        function demonstrateSingleArgumentArrowFunction() {
+            const square = x => x * x;
+            document.getElementById("result").innerHTML = "Square of 4: " + square(4);
+        }
+    </script>
+</head>
+<body onload="demonstrateSingleArgumentArrowFunction()">
+    <h2>Arrow Function with One Argument</h2>
+    <p id="result"></p>
+</body>
+</html>

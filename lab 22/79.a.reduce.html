@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Reduce Function</title>
+    <script>
+        function demonstrateReduce() {
+            const numbers = [5, 10, 15, 20];
+            const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + numbers + "<br>" +
+                "Sum of the Array: " + sum;
+        }
+    </script>
+</head>
+<body onload="demonstrateReduce()">
+    <h2>Array Reduce Function</h2>
+    <p id="result"></p>
+</body>
+</html>

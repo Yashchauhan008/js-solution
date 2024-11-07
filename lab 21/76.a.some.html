@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Some Function</title>
+    <script>
+        function demonstrateSome() {
+            const numbers = [2, 5, 8, 13, 22];
+            const hasEven = numbers.some(num => num % 2 === 0);
+
+            document.getElementById("result").innerHTML = 
+                "Array: " + numbers + "<br>" +
+                "Does the array contain an even number? " + hasEven;
+        }
+    </script>
+</head>
+<body onload="demonstrateSome()">
+    <h2>Array Some Function</h2>
+    <p id="result"></p>
+</body>
+</html>

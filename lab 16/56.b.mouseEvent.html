@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Event Recognition</title>
+    <script>
+        function showEvent(eventName) {
+            document.getElementById("eventDisplay").innerHTML = "Event fired: " + eventName;
+        }
+    </script>
+</head>
+<body>
+    <h2 onmouseover="showEvent('Mouse Over')" onmouseout="showEvent('Mouse Out')" 
+        onclick="showEvent('Click')" ondblclick="showEvent('Double Click')">
+        Perform Mouse Events Here
+    </h2>
+    <p id="eventDisplay">Hover, click, or double-click on the text above.</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Every Function</title>
+    <script>
+        function demonstrateEvery() {
+            const numbers = [12, 34, 18, 27];
+            const allAbove10 = numbers.every(num => num > 10);
+
+            document.getElementById("result").innerHTML = 
+                "Array: " + numbers + "<br>" +
+                "Are all numbers greater than 10? " + allAbove10;
+        }
+    </script>
+</head>
+<body onload="demonstrateEvery()">
+    <h2>Array Every Function</h2>
+    <p id="result"></p>
+</body>
+</html>

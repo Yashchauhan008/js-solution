@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Type Checker</title>
+    <script>
+        function checkCharacterType(event) {
+            var char = event.key;
+            var result;
+
+            if (/[0-9]/.test(char)) {
+                result = "You pressed a number.";
+            } else if (/[a-zA-Z]/.test(char)) {
+                result = "You pressed an alphabet.";
+            } else {
+                result = "You pressed a symbol.";
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeypress="checkCharacterType(event)" maxlength="1" placeholder="Press any key">
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Filter Function</title>
+    <script>
+        function demonstrateFilter() {
+            const numbers = [5, 12, 8, 130, 44];
+            const filteredNumbers = numbers.filter(num => num > 10);
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + numbers + "<br>" +
+                "Filtered Array (greater than 10): " + filteredNumbers;
+        }
+    </script>
+</head>
+<body onload="demonstrateFilter()">
+    <h2>Array Filter Function</h2>
+    <p id="result"></p>
+</body>
+</html>

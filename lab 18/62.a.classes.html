@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class in JavaScript</title>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            introduce() {
+                return "Hi, my name is " + this.name + " and I am " + this.age + " years old.";
+            }
+        }
+
+        function showPersonInfo() {
+            const person = new Person("yash", 19);
+            document.getElementById("info").innerHTML = person.introduce();
+        }
+    </script>
+</head>
+<body onload="showPersonInfo()">
+    <h2>JavaScript Class Example</h2>
+    <p id="info"></p>
+</body>
+</html>

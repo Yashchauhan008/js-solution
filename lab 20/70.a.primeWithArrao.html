@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime Number using Arrow Function</title>
+    <script>
+        const isPrime = (num) => {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        };
+
+        function checkPrime() {
+            const number = 17; 
+            document.getElementById("result").innerHTML = 
+                number + (isPrime(number) ? " is a prime number." : " is not a prime number.");
+        }
+    </script>
+</head>
+<body onload="checkPrime()">
+    <h2>Prime Number Check</h2>
+    <p id="result"></p>
+</body>
+</html>

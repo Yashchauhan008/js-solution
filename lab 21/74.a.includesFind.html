@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Includes and Find</title>
+    <script>
+        function demonstrateIncludesFind() {
+            const numbers = [5, 12, 8, 130, 44];
+            const includesNumber = numbers.includes(8);
+            const foundNumber = numbers.find(num => num > 10);
+
+            document.getElementById("result").innerHTML = 
+                "Array: " + numbers + "<br>" +
+                "Includes 8: " + includesNumber + "<br>" +
+                "First number greater than 10: " + foundNumber;
+        }
+    </script>
+</head>
+<body onload="demonstrateIncludesFind()">
+    <h2>Array Includes and Find</h2>
+    <p id="result"></p>
+</body>
+</html>

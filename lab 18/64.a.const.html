@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use of const in JavaScript</title>
+    <script>
+        function demonstrateConst() {
+            const PI = 3.14159;
+            document.getElementById("constResult").innerHTML = "Value of PI: " + PI;
+            try {
+                PI = 3.14; // Attempt to reassign a const variable
+            } catch (error) {
+                document.getElementById("constError").innerHTML = "Error: " + error.message;
+            }
+        }
+    </script>
+</head>
+<body onload="demonstrateConst()">
+    <h2>const Keyword Example</h2>
+    <p id="constResult"></p>
+    <p id="constError"></p>
+</body>
+</html>

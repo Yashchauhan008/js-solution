@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Over Effect</title>
+    <style>
+        h1 {
+            color: black;
+        }
+    </style>
+    <script>
+        function mouseOver() {
+            document.getElementById("heading").style.color = "red";
+        }
+
+        function mouseOut() {
+            document.getElementById("heading").style.color = "black";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading" onmouseover="mouseOver()" onmouseout="mouseOut()">Hover over this heading</h1>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome Check with Arrow Function</title>
+    <script>
+        const isPalindrome = num => {
+            const str = num.toString();
+            return str === str.split('').reverse().join('');
+        };
+
+        function checkPalindrome() {
+            const number = 121;
+            document.getElementById("result").innerHTML = 
+                number + (isPalindrome(number) ? " is a palindrome." : " is not a palindrome.");
+        }
+    </script>
+</head>
+<body onload="checkPalindrome()">
+    <h2>Palindrome Check Using Arrow Function</h2>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting Based on Time</title>
+    <script>
+        function greetUser() {
+            var now = new Date();
+            var hour = now.getHours();
+            var greeting;
+
+            if (hour < 12) {
+                greeting = "Good Morning!";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+
+            document.getElementById("greeting").innerHTML = greeting;
+        }
+    </script>
+</head>
+<body onload="greetUser()">
+    <h1 id="greeting"></h1>
+</body>
+</html>
