@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Functions</title>
+    <script>
+        function demonstrateArrayFunctions() {
+            var numbers = [5, 2, 8, 1, 4];
+            var fruits = ["Apple", "Banana", "Mango", "Grapes"];
+
+            numbers.push(10);
+            fruits.push("Orange");
+            
+            document.write("<h2>Numbers Array After Operations:</h2>");
+            document.write(numbers.join(", ") + "<br>");
+            document.write("<h2>Fruits Array After Operations:</h2>");
+            document.write(fruits.join(", ") + "<br>");
+
+            numbers.pop();
+            fruits.pop();
+
+            numbers.sort(function(a, b) { return a - b });
+            fruits.sort();
+
+            document.write("<h2>Numbers Array After Operations:</h2>");
+            document.write(numbers.join(", ") + "<br>");
+            document.write("<h2>Fruits Array After Operations:</h2>");
+            document.write(fruits.join(", ") + "<br>");
+        }
+    </script>
+</head>
+<body onload="demonstrateArrayFunctions()">
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Object - Set Methods</title>
+    <script>
+        function displaySetMethods() {
+            var date = new Date();
+            document.write("<h2>Original Date and Time:</h2>");
+            document.write("Full Date: " + date + "<br><br>");
+
+            date.setFullYear(2023);
+            date.setMonth(11); 
+            date.setDate(25); 
+            date.setHours(15);
+            date.setMinutes(30);
+            date.setSeconds(45);
+            date.setMilliseconds(500);
+
+            document.write("<h2>Updated Date and Time:</h2>");
+            document.write("Full Date: " + date + "<br>");
+        }
+    </script>
+</head>
+<body onload="displaySetMethods()">
+</body>
+</html>

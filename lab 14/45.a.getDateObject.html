@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Object - Get Methods</title>
+    <script>
+        function displayGetMethods() {
+            var date = new Date();
+
+            document.write("<h2>Current Date and Time:</h2>");
+            document.write("Full Date: " + date + "<br>");
+            document.write("Year: " + date.getFullYear() + "<br>");
+            document.write("Month: " + (date.getMonth() + 1) + " (0-11, January is 0)<br>");
+            document.write("Day of Month: " + date.getDate() + "<br>");
+            document.write("Day of Week: " + date.getDay() + " (0-6, Sunday is 0)<br>");
+            document.write("Hours: " + date.getHours() + "<br>");
+            document.write("Minutes: " + date.getMinutes() + "<br>");
+            document.write("Seconds: " + date.getSeconds() + "<br>");
+            document.write("Milliseconds: " + date.getMilliseconds() + "<br>");
+            document.write("Time (ms since 1 Jan 1970): " + date.getTime() + "<br>");
+            document.write("UTC Hours: " + date.getUTCHours() + "<br>");
+        }
+    </script>
+</head>
+<body onload="displayGetMethods()">
+</body>
+</html>

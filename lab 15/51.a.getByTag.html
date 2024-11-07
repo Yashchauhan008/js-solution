@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByTagName Example</title>
+    <script>
+        function updateParagraphs() {
+            var paragraphs = document.getElementsByTagName("p");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].innerHTML = "Updated content of paragraph " + (i + 1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <button onclick="updateParagraphs()">Update Paragraphs</button>
+</body>
+</html>

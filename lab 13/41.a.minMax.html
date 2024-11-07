@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Max and Min</title>
+    <script>
+        function findMaxMin() {
+            var numbers = [];
+            var numberOfElements = prompt("How many numbers do you want to enter?");
+            
+            for (var i = 0; i < numberOfElements; i++) {
+                var num = prompt("Enter number " + (i + 1) + ":");
+                numbers.push(parseInt(num));
+            }
+
+            var max = Math.max(...numbers);
+            var min = Math.min(...numbers);
+
+            document.write("<h2>Array: " + numbers.join(", ") + "</h2>");
+            document.write("<h3>Maximum number: " + max + "</h3>");
+            document.write("<h3>Minimum number: " + min + "</h3>");
+        }
+    </script>
+</head>
+<body onload="findMaxMin()">
+</body>
+</html>

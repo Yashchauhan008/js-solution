@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries Array</title>
+    <script>
+        function createCountriesArray() {
+            var countries = [];
+            var numberOfCountries = prompt("How many countries do you want to enter?");
+            
+            for (var i = 0; i < numberOfCountries; i++) {
+                var country = prompt("Enter country " + (i + 1) + ":");
+                countries.push(country);
+            }
+
+            document.write("<h2>List of Countries:</h2>");
+            document.write(countries.join(", ") + "<br>");
+        }
+    </script>
+</head>
+<body onload="createCountriesArray()">
+</body>
+</html>

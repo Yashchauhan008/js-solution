@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByName Example</title>
+    <script>
+        function displayMessage() {
+            var elements = document.getElementsByName("info");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].value = "Updated by getElementsByName!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="info" value="Text Field 1"><br>
+    <input type="text" name="info" value="Text Field 2"><br>
+    <input type="text" name="info" value="Text Field 3"><br>
+    <button onclick="displayMessage()">Update Text Fields</button>
+</body>
+</html>

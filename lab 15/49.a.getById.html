@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById Example</title>
+    <script>
+        function changeText() {
+            var element = document.getElementById("message");
+            element.innerHTML = "Hello, this text was changed using getElementById!";
+        }
+    </script>
+</head>
+<body>
+    <h2 id="message">Original Text</h2>
+    <button onclick="changeText()">Change Text</button>
+</body>
+</html>
