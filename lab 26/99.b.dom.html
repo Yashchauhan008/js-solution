@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery DOM Manipulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#addTextBtn").click(function(){
+                $("#container").append("<p>New Paragraph</p>");
+            });
+            $("#removeTextBtn").click(function(){
+                $("#container p:last").remove();
+            });
+            $("#changeTextBtn").click(function(){
+                $("#container p:first").text("Text has been changed!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery DOM Manipulation Demonstration</h2>
+    <div id="container">
+        <p>Initial Paragraph</p>
+    </div>
+    <button id="addTextBtn">Add Text</button>
+    <button id="removeTextBtn">Remove Text</button>
+    <button id="changeTextBtn">Change Text</button>
+</body>
+</html>

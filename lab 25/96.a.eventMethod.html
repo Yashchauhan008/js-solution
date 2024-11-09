@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Event Methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Click event
+            $("#clickButton").click(function(){
+                alert("Button clicked!");
+            });
+
+            // Mouseover event
+            $("#hoverText").mouseover(function(){
+                $(this).css("color", "red");
+            });
+
+            // Focus event
+            $("#focusInput").focus(function(){
+                $(this).css("background-color", "lightblue");
+            });
+
+            // Double click event
+            $("#doubleClickText").dblclick(function(){
+                $(this).css("font-size", "20px");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Event Methods</h2>
+    <button id="clickButton">Click Me</button>
+    <p id="hoverText">Hover over this text.</p>
+    <input type="text" id="focusInput" placeholder="Focus on me">
+    <p id="doubleClickText">Double-click this text to enlarge.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // ID selector
+            $("#idSelector").css("color", "blue");
+
+            // Class selector
+            $(".classSelector").css("color", "green");
+
+            // Tag selector
+            $("h2").css("color", "purple");
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Selectors</h2>
+    <p id="idSelector">This text uses ID selector.</p>
+    <p class="classSelector">This text uses class selector.</p>
+    <p>This is a regular paragraph.</p>
+</body>
+</html>

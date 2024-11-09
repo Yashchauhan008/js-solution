@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Custom Selectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Select the first paragraph
+            $("p:first").css("color", "blue");
+
+            // Select even-numbered list items
+            $("li:even").css("background-color", "lightgray");
+
+            // Select input elements with value 'Submit'
+            $("input[value='Submit']").css("background-color", "yellow");
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Custom Selectors</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <input type="button" value="Submit">
+    <input type="button" value="Cancel">
+</body>
+</html>

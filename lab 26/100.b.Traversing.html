@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Traversing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#siblingsBtn").click(function(){
+                $("#item2").siblings().css("color", "red");
+            });
+            $("#parentBtn").click(function(){
+                $("#item2").parent().css("border", "2px solid blue");
+            });
+            $("#childrenBtn").click(function(){
+                $("#listContainer").children().css("background-color", "lightgrey");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Traversing Demonstration</h2>
+    <div id="listContainer">
+        <p id="item1">Item 1</p>
+        <p id="item2">Item 2</p>
+        <p id="item3">Item 3</p>
+    </div>
+    <button id="siblingsBtn">Highlight Siblings of Item 2</button>
+    <button id="parentBtn">Highlight Parent of Item 2</button>
+    <button id="childrenBtn">Highlight All Children</button>
+</body>
+</html>
