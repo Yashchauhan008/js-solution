@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spread Operator</title>
+    <script>
+        function demonstrateSpreadOperator() {
+            const student = { name: "Alice", age: 20 };
+            const studentDetails = { ...student, grade: "A", school: "XYZ School" };
+
+            document.getElementById("result").innerHTML = 
+                `Name: ${studentDetails.name}<br>Age: ${studentDetails.age}<br>` +
+                `Grade: ${studentDetails.grade}<br>School: ${studentDetails.school}`;
+        }
+    </script>
+</head>
+<body onload="demonstrateSpreadOperator()">
+    <h2>Spread Operator</h2>
+    <p id="result"></p>
+</body>
+</html>

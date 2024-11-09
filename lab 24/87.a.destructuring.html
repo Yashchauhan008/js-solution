@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Destructuring</title>
+    <script>
+        function demonstrateObjectDestructuring() {
+            const student = { name: "Alice", age: 20, grade: "A" };
+            const { name, age, grade } = student;
+
+            document.getElementById("result").innerHTML = 
+                `Name: ${name}<br>Age: ${age}<br>Grade: ${grade}`;
+        }
+    </script>
+</head>
+<body onload="demonstrateObjectDestructuring()">
+    <h2>Object Destructuring</h2>
+    <p id="result"></p>
+</body>
+</html>

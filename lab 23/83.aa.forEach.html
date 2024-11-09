@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Student Names Using forEach</title>
+    <script>
+        function printStudentNames() {
+            const students = ["Alice", "Bob", "Charlie", "David"];
+            let result = "";
+            students.forEach(student => {
+                result += student + "<br>";
+            });
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="printStudentNames()">
+    <h2>Student Names</h2>
+    <p id="result"></p>
+</body>
+</html>

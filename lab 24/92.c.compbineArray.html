@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Combine Arrays Using Spread Operator</title>
+    <script>
+        function combineArrays() {
+            const array1 = [1, 2, 3];
+            const array2 = [4, 5, 6];
+            const combinedArray = [...array1, ...array2];
+
+            document.getElementById("result").innerHTML = 
+                "Combined Array: " + combinedArray.join(", ");
+        }
+    </script>
+</head>
+<body onload="combineArrays()">
+    <h2>Combine Arrays with Spread Operator</h2>
+    <p id="result"></p>
+</body>
+</html>

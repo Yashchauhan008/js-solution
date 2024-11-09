@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Duplicates Using Reduce</title>
+    <script>
+        function removeDuplicates() {
+            const numbers = [10, 20, 30, 20, 40, 30, 50];
+            const uniqueNumbers = numbers.reduce((acc, num) => {
+                if (!acc.includes(num)) acc.push(num);
+                return acc;
+            }, []);
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + numbers + "<br>" +
+                "Array Without Duplicates: " + uniqueNumbers;
+        }
+    </script>
+</head>
+<body onload="removeDuplicates()">
+    <h2>Remove Duplicates From Array</h2>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter Array for Numbers Greater Than 50</title>
+    <script>
+        function filterGreaterThan50() {
+            const numbers = [10, 45, 60, 75, 20, 100];
+            const result = numbers.filter(num => num > 50);
+
+            document.getElementById("result").innerHTML = 
+                "Original Array: " + numbers + "<br>" +
+                "Numbers Greater Than 50: " + result;
+        }
+    </script>
+</head>
+<body onload="filterGreaterThan50()">
+    <h2>Filter Numbers Greater Than 50</h2>
+    <p id="result"></p>
+</body>
+</html>
